@@ -2,22 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Prepa4-Portalestudiantil</title>
+    <title>Login Escolar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="login-container">
-    <h2>Portal Estudiantil</h2>
-    
-    <input type="text" id="usuario" placeholder="Usuario">
-    <input type="password" id="password" placeholder="Contraseña">
-    
-    <button onclick="login()">Ingresar</button>
-    
-    <p id="error"></p>
-</div>
+    <div class="top-bar"></div>
 
-<script src="script.js"></script>
-</body></body><body class="login-page"></body>
+    <div class="login-container">
+        <h2>Inicio de Sesión</h2>
+
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+
+        <button onclick="login()">Ingresar</button>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <div class="bottom-bar"></div>
+
+    <div id="panel" class="panel oculto">
+        <h2>Panel del Alumno</h2>
+
+        <div class="info">
+            <p><strong>Nombre:</strong> <span id="nombreAlumno"></span></p>
+<table>
+    <tr>
+        <th>Materia</th>
+        <th>Parcial 1</th>
+        <th>Parcial 2</th>
+        <th>Parcial 3</th>
+    </tr>
+
+    <tr>
+        <td>Matemáticas</td>
+        <td id="m1p1"></td>
+        <td id="m1p2"></td>
+        <td id="m1p3"></td>
+    </tr>
+
+    <tr>
+        <td>Ingles</td>
+        <td id="m2p1"></td>
+        <td id="m2p2"></td>
+        <td id="m2p3"></td>
+    </tr>
+
+    <tr>
+        <td>Historia</td>
+        <td id="h1p1"></td>
+        <td id="h1p2"></td>
+        <td id="h1p3"></td>
+    </tr>
+</table>
+    
+    <script src="script.js"></script>
+</body>
 </html>
